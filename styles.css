@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+
+:root {
+  --clr-accent-color: #0b2849;
+  --clr-secondary-color: #7ba4d2;
+
+  --clr-bg-color: #f0f7ff;
+
+  --clr-txt-color: #000f1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-txt-color);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  padding: 20px;
+  background-color: var(--clr-accent-color);
+}
+
+.hero {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  color: var(--clr-secondary-color);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.card {
+  background-color: var(--clr-bg-color);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.title {
+  margin: 15px 0;
+}
+
+.img {
+  background-image: url("https://scontent.ftia2-1.fna.fbcdn.net/v/t1.18169-9/1525383_343365369138622_2136119246_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=hTz32NgwArsAX8xM-Iz&_nc_ht=scontent.ftia2-1.fna&oh=00_AT80EC2IoQVB9-EXohq-zCPbj3aSIUR1kcogzK0nRCad4w&oe=624885F5");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  border-radius: 10px;
+}
+
+.about-content {
+  display: flex;
+}
+
+.content {
+  flex: 2;
+}
+
+.offer + .offer {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: solid 2px var(--clr-accent-color);
+}
+
+@media only screen and (max-width: 650px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .img {
+    height: 200px;
+    width: 100%;
+    flex: none;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .offer + .offer {
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: solid 2px var(--clr-accent-color);
+    border-left: 0;
+  }
+}
+
+.footer {
+  background-color: var(--clr-accent-color);
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.contact {
+  color: var(--clr-secondary-color);
+}
