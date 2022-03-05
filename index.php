@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <title>Shkolla</title>
   </head>
   <body>
@@ -50,6 +54,21 @@
         </div>
       </div>
     </div>
+    <div id="overlay" class="overlay">
+      <div class="container">
+        <div class="close-container">
+          <span id="close" class="close material-icons-outlined">
+            close
+          </span>
+        </div>
+        <div class="menu">
+          <a href="#" class="menu-items">Home</a>
+          <a href="#" class="menu-items">About</a>
+          <a href="#" class="menu-items">Contact</a>
+        </div>
+      </div>
+    </div>
     <?php include "footer.php" ?>
   </body>
+  <script src="main.js"></script>
 </html>

@@ -33,6 +33,18 @@ nav {
   background-color: var(--clr-accent-color);
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container span {
+  font-size: 32px;
+  color: var(--clr-secondary-color);
+  cursor: pointer;
+}
+
 .hero {
   display: flex;
   gap: 20px;
@@ -76,6 +88,52 @@ nav {
   padding-left: 20px;
   margin-left: 20px;
   border-left: solid 2px var(--clr-accent-color);
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.95);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  padding: 20px;
+  display: none;
+}
+
+.close-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close {
+  color: white;
+  font-size: 32px !important;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.menu {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-items {
+  font-size: 22px;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.menu-items:hover,
+.menu-items:focus {
+  border-bottom: 1px solid white;
 }
 
 @media only screen and (max-width: 650px) {
